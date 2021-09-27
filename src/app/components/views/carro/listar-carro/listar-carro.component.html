@@ -1,0 +1,9 @@
+<a routerLink="/carro/cadastrar">Cadastrar carro</a>
+
+<ol>
+    <li *ngFor="let carro of carros">
+        {{carro.nome}}
+        <a routerLink="/carro/cadastrar/{{carro.id}}">Editar carro</a>
+    </li>
+</ol>
+
