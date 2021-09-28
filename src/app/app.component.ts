@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Carro } from './models/carro';
-import { CarroService } from './services/carro.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',

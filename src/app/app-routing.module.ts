@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CadastrarCarroComponent } from './components/views/carro/cadastrar-carro/cadastrar-carro.component';
-import { ListarCarroComponent } from './components/views/carro/listar-carro/listar-carro.component';
+import { CadastrarAutomovelComponent } from './components/views/automovel/cadastrar-automovel/cadastrar-automovel.component';
+import { ListarAutomovelComponent } from './components/views/automovel/listar-automovel/listar-automovel.component';
 
 const routes: Routes = [
   {
     path: "",
-    component: ListarCarroComponent,
+    component: ListarAutomovelComponent,
   },
   {
-    path: "carro/listar",
-    component: ListarCarroComponent,
+    path: "automovel/listar",
+    component: ListarAutomovelComponent,
   },
   {
-    path: "carro/cadastrar",
-    component: CadastrarCarroComponent,
+    path: "automovel/cadastrar",
+    component: CadastrarAutomovelComponent,
   }
 ];
 

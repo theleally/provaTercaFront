@@ -5,15 +5,15 @@ import {HttpClientModule} from "@angular/common/http";
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { ListarCarroComponent } from './components/views/carro/listar-carro/listar-carro.component';
-import { CadastrarCarroComponent } from './components/views/carro/cadastrar-carro/cadastrar-carro.component';
+import { ListarAutomovelComponent } from './components/views/automovel/listar-automovel/listar-automovel.component';
+import { CadastrarAutomovelComponent } from './components/views/automovel/cadastrar-automovel/cadastrar-automovel.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListarCarroComponent,
-    CadastrarCarroComponent
+    ListarAutomovelComponent,
+    CadastrarAutomovelComponent
   ],
   imports: [
     BrowserModule,
