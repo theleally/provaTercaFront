@@ -2,8 +2,11 @@
 
 <ol>
     <li *ngFor="let automovel of automoveis">
-        {{automovel.modelo}}
-        <a routerLink="/automovel/cadastrar/{{automovel.id}}">Editar automovel</a>
+        Marca: {{automovel.marca}}
+        Modelo: {{automovel.modelo}}
+        Preço: {{automovel.preco}}
+        Quantidade: {{automovel.quantidade}}
+        <!-- <a routerLink="/automovel/cadastrar/{{automovel.id}}">Editar automóvel</a> -->
     </li>
 </ol>
 

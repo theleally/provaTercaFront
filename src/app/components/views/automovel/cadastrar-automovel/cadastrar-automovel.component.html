@@ -1,5 +1,19 @@
+
+
+<div id="marca">
+    <label for="marca">Marca:</label>
+    <input type="text" name="marca" [(ngModel)]="marca">
+</div>
 <div id="modelo">
     <label for="modelo">Modelo:</label>
-    <input type="text" name="modelo" [(ngModel)="modelo"]>
+    <input type="text" name="modelo" [(ngModel)]="modelo">
+</div>
+<div id="preco">
+    <label for="preco">Preço:</label>
+    <input type="number" name="preco" [(ngModel)]="preco">
+</div>
+<div id="qtd">
+    <label for="qtd">Quantidade:</label>
+    <input type="number" name="qtd" [(ngModel)]="quantidade">
 </div>
 <button (click)="cadastrar()">Cadastrar</button>

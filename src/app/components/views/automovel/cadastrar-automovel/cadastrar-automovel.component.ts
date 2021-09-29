@@ -10,7 +10,10 @@ import { AutomovelService } from 'src/app/services/automovel.service';
 })
 export class CadastrarAutomovelComponent implements OnInit {
 
+  marca!: string;
   modelo!: string;
+  preco!: number;
+  quantidade!: number;
 
   constructor(private router: Router, private service: AutomovelService) { }
 
@@ -18,8 +21,11 @@ export class CadastrarAutomovelComponent implements OnInit {
   }
 
   cadastrar(): void {
-    let automovel: Automovel = {
-      modelo: this.modelo
+    let automovel : Automovel = {
+      marca: this.marca,
+      modelo: this.modelo,
+      preco: this.preco,
+      quantidade: this.quantidade,
     };
     this.service.create(automovel).subscribe(automovel => {
       console.log(automovel);
